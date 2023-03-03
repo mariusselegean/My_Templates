@@ -1,0 +1,27 @@
+#####################################################
+##  Author: Selegean Marius                        ##
+##  TKinter Template                               ##
+##  button with theme                              ##
+#####################################################
+
+
+import tkinter as tk
+from tkinter import ttk
+"""
+List with themes for TTK
+https://wiki.tcl-lang.org/page/List+of+ttk+Themes
+"""
+
+
+root = tk.Tk()
+
+# create button using clam theme
+style = ttk.Style()
+style.theme_use('clam')
+style.configure('button.TButton', foreground='black', background='#4CAF50', font=('Sans', 12, 'bold'))
+
+# create the button with the modern style
+button = ttk.Button(root, text='Click Me', style='Modern.TButton')
+button.pack(padx=20, pady=20)
+
+root.mainloop()
