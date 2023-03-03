@@ -1,0 +1,37 @@
+#####################################################
+##  Author: Selegean Marius                        ##
+##  TKinter Template                               ##
+##  Text boxes and labels                          ##
+#####################################################
+
+
+import tkinter as tk
+
+root = tk.Tk()
+root.geometry("300x200")
+
+# Creating label and textbox
+label1 = tk.Label(root, text="Label name:")
+label1.pack()
+
+textbox = tk.Entry(root)
+textbox.pack()
+
+label2 = tk.Label(root, text="Label name:")
+label2.pack()
+
+textbox = tk.Entry(root)
+textbox.pack()
+
+label3 = tk.Label(root, text="Label name:")
+label3.pack()
+
+textbox = tk.Entry(root)
+textbox.pack()
+
+label4 = tk.Label(root, text="Label name:")
+label4.pack()
+
+
+
+root.mainloop()
